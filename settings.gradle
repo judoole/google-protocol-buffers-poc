@@ -1,4 +1,5 @@
 include 'java-lib'
 include 'server'
+include 'client-java'
 
 rootProject.name = 'google-protocol-buffers-poc'

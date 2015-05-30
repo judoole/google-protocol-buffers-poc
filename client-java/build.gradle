@@ -1,7 +1,8 @@
 apply plugin: 'application'
 apply plugin: 'java'
 
-repositories {
+mainClassName = 'helloworld.HelloWorldClient'
+repositories{
     mavenCentral()
 }
 
@@ -10,5 +11,3 @@ dependencies{
     compile 'io.netty:netty-codec-http2:4.1.0.Beta5'
     compile 'io.grpc:grpc-core:0.7.0'
 }
-
-mainClassName = 'helloworld.HelloWorldServer'
