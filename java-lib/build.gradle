@@ -1,0 +1,25 @@
+plugins {
+  id "com.google.protobuf" version "0.4.1"
+}
+
+sourceSets{
+  main{
+    proto{
+      srcDir '../protocols/src'
+      plugins {
+        grpc { }
+      }
+    }
+  }
+}
+
+repositories {
+    mavenCentral()
+}
+
+protocDep = 'com.google.protobuf:protoc:3.0.0-alpha-2'
+protobufNativeCodeGenPluginDeps = ["grpc:io.grpc:protoc-gen-grpc-java:0.7.0"]
+
+dependencies{
+  compile 'com.google.protobuf:protobuf-java:3.0.0-alpha-2'
+}

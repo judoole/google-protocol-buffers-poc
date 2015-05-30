@@ -1,0 +1,4 @@
+include 'java-lib'
+include 'server'
+
+rootProject.name = 'google-protocol-buffers-poc'
